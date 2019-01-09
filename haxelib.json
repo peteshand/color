@@ -1,0 +1,11 @@
+{
+	"name": "color",
+	"url": "https://github.com/peteshand/color",
+	"license": "MIT",
+	"tags": ["color", "rgb"],
+	"description": "abstract wrapping for UInt colors",
+	"version": "1.0.0",
+	"releasenote": "initial release",
+	"contributors": [ "p.j.shand" ],
+	"classPath": "src/"
+}
