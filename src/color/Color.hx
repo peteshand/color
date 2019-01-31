@@ -76,4 +76,9 @@ abstract Color(UInt) from Int from UInt to UInt
 		
 		return randomColor;
 	}
+
+	function toString()
+	{
+		return "0x" + StringTools.hex(this, 8);
+	}
 }

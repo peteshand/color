@@ -4,8 +4,8 @@
 	"license": "MIT",
 	"tags": ["color", "rgb"],
 	"description": "abstract wrapping for UInt colors",
-	"version": "1.0.0",
-	"releasenote": "initial release",
+	"version": "1.0.1",
+	"releasenote": "add .hex toString",
 	"contributors": [ "p.j.shand" ],
 	"classPath": "src/"
 }
