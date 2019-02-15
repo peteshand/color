@@ -4,7 +4,7 @@ package color;
  * ...
  * @author P.J.Shand
  */
-abstract Color(UInt) from Int from UInt to UInt 
+abstract Color(UInt) from Int from UInt to UInt
 {
 	public var red(get, set):UInt;
 	public var green(get, set):UInt;
@@ -75,6 +75,24 @@ abstract Color(UInt) from Int from UInt to UInt
 		else randomColor.blue = blue;
 		
 		return randomColor;
+	}
+
+	@:from
+	static public function fromString(s:String) {
+		if (s.indexOf("#") == 0)		return new Color(Std.parseInt("0x" + s.substring(1, s.length)));
+		else if (s.indexOf("0x") == 0)	return new Color(Std.parseInt(s));
+		// unable to parse
+		return new Color(0);
+	}
+
+	public function mix(color:Color, strength:Float):Color
+	{
+		var output:Color = new Color(0);
+		output.red = Math.floor((red * (1 - strength)) + (color.red * strength));
+		output.green = Math.floor((green * (1 - strength)) + (color.green * strength));
+		output.blue = Math.floor((blue * (1 - strength)) + (color.blue * strength));
+		output.alpha = Math.floor((alpha * (1 - strength)) + (color.alpha * strength));
+		return output;
 	}
 
 	function toString()

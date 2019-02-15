@@ -3,8 +3,8 @@
 	"url": "https://github.com/peteshand/color",
 	"license": "MIT",
 	"tags": ["color", "rgb"],
-	"description": "abstract wrapping for UInt colors",
-	"version": "1.0.1",
+	"description": "add from #000000 and 0x000000 parser",
+	"version": "1.0.2",
 	"releasenote": "add .hex toString",
 	"contributors": [ "p.j.shand" ],
 	"classPath": "src/"
