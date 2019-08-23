@@ -3,9 +3,9 @@
 	"url": "https://github.com/peteshand/color",
 	"license": "MIT",
 	"tags": ["color", "rgb"],
-	"description": "add from #000000 and 0x000000 parser",
-	"version": "1.0.2",
-	"releasenote": "add .hex toString",
+	"description": "abstract wrapping for UInt color",
+	"version": "1.0.3",
+	"releasenote": "add to HSL method",
 	"contributors": [ "p.j.shand" ],
 	"classPath": "src/"
 }
